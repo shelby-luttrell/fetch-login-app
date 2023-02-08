@@ -7,6 +7,8 @@ import InputAdornment from '@mui/material/InputAdornment';
 import FormControl from '@mui/material/FormControl';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
+import SelectDropdown from './SelectDropdown.js';
+
 
 export default function UserCreationForm() {
     const [showPassword, setShowPassword] = React.useState(false);
@@ -69,13 +71,14 @@ export default function UserCreationForm() {
                     </FormControl>
                 </div>
                 <div>
-                    <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
+                    {/* <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
                         <InputLabel htmlFor="state-field">State</InputLabel>
                         <OutlinedInput
                             id="state-field"
                             label="State"
                         />
-                    </FormControl>
+                    </FormControl> */}
+                    <SelectDropdown/>
                 </div>
             </div>
         </Box>
