@@ -3,6 +3,7 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
+import UserCreationForm from './UserCreationForm';
 
 function Copyright() {
   return (
@@ -24,8 +25,9 @@ export default function App() {
         <Typography variant="h4" component="h1" gutterBottom>
           Fetch React Login Screen Example
         </Typography>
-        <Copyright />
       </Box>
+      <UserCreationForm></UserCreationForm>
+      <Copyright />
     </Container>
   );
 }
